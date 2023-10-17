@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+/** Variables - colors **/
+:root {
+    /* Light */
+    --color-light-50: #f8fafc;
+
+    /* Dark */
+    --color-dark-50: #505050;
+    --color-dark-100: #d2d2d2;
+    --color-dark-900: #919191;
+
+    /* blue */
+    --color-blue-50: #110533;
+    --color-blue-100: #262e3f;
+    --color-blue-200: #141617;
+
+    /* yellow */
+    --color-yellow-50: #ffff00;
+    --color-yellow-100: #ffd700;
+    --color-yellow-200: #f0e68c;
+
+    /* Gradient */
+    --color-gradient: linear-gradient(90deg, var(--color-dark-50), var(--color-dark-900), var(--color-dark-100));
+    --color-gradients: linear-gradient(90deg, var(--color-yellow-100), var(--color-yellow-200), var(--color-yellow-50));
+    --color-gradi: linear-gradient(90deg, var(--color-blue-50), var(--color-blue-100), var(--color-blue-200));
+}
+
+/* General */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#corpo{
+
+    background-color: whitesmoke;
+}
+
+/* Form Header */
+#form_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#form_header h1 {
+    font-size: 60px;
+    position: relative; /* utilizado para deixar uma linha abaixo */
+}
+
+#form_header h1::before {
+    position: absolute;
+    content: '';
+    width: 70%;
+    height: 7px;
+    background-color: blue;
+    bottom: 5px; /* Desce a linha que está em cima do login para baixo dele */
+    border-radius: 5px;
+}
+
+#container{
+    border-radius: 10px;
+    padding: 200px;
+    width: 500px;
+    margin: auto;
+}
+
+#mode_icon{
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+h3{
+    font-size: 30px;
+    text-align: center;
+}
